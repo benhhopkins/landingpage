@@ -21,14 +21,14 @@ body {
       padding-top: 1em;
       font-size: 1em;
       line-height: 1.75;
-      grid-template-columns: 1fr 80% .1fr;
+      grid-template-columns: 1fr 80% 1fr;
       grid-template-rows: 1fr auto;
       grid-template-areas: "header main right" "header footer right"; } }
   @media (min-width: 60em) {
     body {
       font-size: 1em;
       line-height: 1.8375;
-      grid-template-columns: 1fr 60% .5fr; } }
+      grid-template-columns: 1fr 60% 1fr; } }
   @media (min-width: 100em) {
     body {
       font-size: 1.1em;
