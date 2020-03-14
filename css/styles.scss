@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Montserrat|Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&family=Roboto:wght@200');
 
 $font-text: 'Roboto', sans-serif;
 $font-code: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
@@ -56,6 +56,7 @@ body {
     font-family: $font-text;
     font-size: $base-font-size*.9;
     line-height: $base-line-height*.9;
+    font-weight: 300;
 
     display: grid;
     grid-template-columns: 1fr;

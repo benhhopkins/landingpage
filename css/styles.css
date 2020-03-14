@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Bebas+Neue|Montserrat|Roboto");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&family=Roboto:wght@200");
 html {
   height: 100%; }
 
@@ -11,6 +11,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 0.9em;
   line-height: 1.575;
+  font-weight: 300;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
