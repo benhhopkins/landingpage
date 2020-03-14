@@ -1,4 +1,5 @@
-const gulp = require('gulp');
+var gulp = require('gulp'),
+    connect = require('gulp-connect');
 const markdown = require('markdown-it')({
     html: true
 });
@@ -7,7 +8,6 @@ const rename = require('gulp-rename');
 const fs = require('fs');
 const map = require('map-stream');
 const sass = require('gulp-sass');
-const webserver = require('gulp-webserver');
 
 markdown.use(markdownattrs);
 
@@ -17,12 +17,25 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('css'));
 });
 
-gulp.task('default', gulp.series(['sass'], function () {
+gulp.task('connect', function () {
+    connect.server({
+        root: './',
+        livereload: true
+    });
+});
+
+gulp.task('watch', function () {
     gulp.watch('css/*.scss').on('change', gulp.series('sass'));
-    gulp.src('./')
-        .pipe(webserver({
-            livereload: true,
-            directoryListing: false,
-            open: true
-        }));
-}));
+});
+
+gulp.task('default', gulp.series(['sass', 'connect', 'watch']));
+
+// gulp.task('default', gulp.series(['sass'], function () {
+//     gulp.watch('css/*.scss').on('change', gulp.series('sass'));
+//     gulp.src('./')
+//         .pipe(webserver({
+//             livereload: true,
+//             directoryListing: false,
+//             open: true
+//         }));
+// }));

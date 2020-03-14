@@ -1,5 +1,5 @@
 {
-  "name": "bhopkins.net",
+  "name": "ben-erin.com",
   "version": "1.0.0",
   "description": "website",
   "main": "gulpfile.js",
@@ -22,9 +22,9 @@
   "devDependencies": {
     "fs": "0.0.1-security",
     "gulp": "^4.0.2",
+    "gulp-connect": "^5.7.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
-    "gulp-webserver": "^0.9.1",
     "map-stream": "0.0.7",
     "markdown-it": "^8.4.2",
     "markdown-it-attrs": "^2.4.1"
