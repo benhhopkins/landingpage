@@ -84,10 +84,10 @@ strong {
 h1, h2 {
   padding: .5em 1.5em .5em 1.5em;
   margin: 0em;
-  color: #ffffff;
+  color: #da3e52;
   text-align: center;
   font-family: "Bebas Neue", sans-serif;
-  font-weight: lighter; }
+  font-weight: normal; }
 
 h3, h4, h5, h6 {
   padding: .1em .1em .1em .1em;
@@ -204,6 +204,16 @@ blockquote {
   border-left: 0.5em solid #7ec1ff;
   color: #f8f8f2;
   margin: .5em 1em .5em 1em; }
+
+#postponed {
+  rotate: 30deg;
+  position: absolute;
+  font-size: xxx-large;
+  left: 50%;
+  transform: scaleX(1.5);
+  width: 300px;
+  margin-left: -226px;
+  -webkit-text-stroke: 1.5px black; }
 
 #header {
   grid-area: header;
