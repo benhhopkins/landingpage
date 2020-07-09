@@ -206,14 +206,16 @@ blockquote {
   margin: .5em 1em .5em 1em; }
 
 #postponed {
-  rotate: 30deg;
   position: absolute;
   font-size: xxx-large;
   left: 50%;
-  transform: scaleX(1.5);
   width: 300px;
   margin-left: -226px;
-  -webkit-text-stroke: 1.5px black; }
+  -webkit-text-stroke: 1.5px black;
+  transform: rotate(30deg) scaleX(1.5); }
+
+#strike {
+  text-decoration: line-through; }
 
 #header {
   grid-area: header;
